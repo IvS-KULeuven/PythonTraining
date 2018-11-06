@@ -1,0 +1,22 @@
+{
+    "TiO2":{
+        "monomer": "TiO2",
+        "layout": "Ti(x)O(2*x)",
+        "max_size": 10
+    },
+    "SiO":{
+        "monomer": "SiO",
+        "layout": "Si(x)O(x)",
+        "max_size": 10
+    },
+    "MgO":{
+        "monomer": "MgO",
+        "layout": "Mg(x)O(x)",
+        "max_size": 10
+    },
+    "Al2O3":{
+        "monomer": "Al2O3",
+        "layout": "Al(2*x)O(3*x)",
+        "max_size": 8
+    }
+}
