@@ -1,0 +1,47 @@
+APOD Server:
+    protocol :    https://
+    hostname :    apod.nasa.gov
+    location :    /apod/astropix.html
+    search   :    /cgi-bin/apod/apod_search
+
+use_anonymous: True
+
+Constants:
+    Speed of light:
+        value: 299792458.
+        unit : m s-1
+        
+    Speed of light in air:
+        value: 299709348.         # cc/1.0002773, T=15C, standard atmospheric pressure
+        unit : m s-1
+        
+    Solar Mass:                   # Harmanec & Prsa 2011
+        value: 1.988547e30      
+        unit : kg
+    
+    Solar Radius:                 # Harmanec & Prsa 2011
+        value: 6.95508e8
+        unit : m
+    
+    Solar Luminosity:             # Harmanec & Prsa 2011
+        value: 3.846e26
+        unit : kg m2 s-3
+        
+    Solar Effective Temperature:  # Harmanec & Prsa 2011
+        value: 5779.5747
+        unit : K
+
+    Planck: [6.626070040E-34, "J s"]
+    
+ObservingParameters:
+
+    MissionDuration:   6.5        # Total duration of the mission [yr], relevant for BOL->EOL degradation
+    NumExposures   :   10         # Number of exposures
+    BeginExposureNr:    0         # Sequential number of first exposure. useful for slurm parallellisation
+    ExposureTime   :   21         # [s]
+    RApointing     :   180        # Platform (not telescope) right ascension pointing coordinate      [deg] 
+    DecPointing    :   -70        # Platform (not telescope) declination pointing coordinate          [deg]
+    Fluxm0         :   1.00179e8  # Photon flux of a V=0 G2V-star                           [phot/s/m^2/nm]
+    StarCatalogFile:   inputfiles/starcatalog.txt
+
+
